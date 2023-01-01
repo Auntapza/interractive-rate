@@ -1,0 +1,111 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* reset browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass' , sans-serif;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    background-color: var(--VeryDarkBlue);
+}
+.attribution {
+    color: white;
+}
+
+.rate-page {
+    background-color: hsla(213, 20%, 18%, 0.548);
+    padding: 2.5rem;
+    border-radius: 20px;
+    color: white;
+    width: 450px;
+    display: grid;
+    gap: 1rem;
+}
+.rate-page img {
+    background-color: var(--DarkBlue);
+    padding: .8rem;
+    border-radius: 50%;
+}
+.rate {
+    display: flex;
+    justify-content: space-between;
+}
+.rate-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--DarkBlue);
+    color: white;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.rate-btn:hover {
+    background-color: var(--MediumGrey);
+}
+.rate-btn:focus {
+    background-color: var(--Orange);
+}
+
+button[type=submit] {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    background-color: var(--Orange);
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+button[type=submit]:active {
+    background-color: white;
+    color: var(--Orange);
+}
+
+/* thank you style */
+.thank {
+    background-color: hsla(213, 20%, 18%, 0.548);
+    padding: 2.5rem;
+    border-radius: 20px;
+    color: white;
+    width: 450px;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    display: none;
+}
+.thank img {
+    margin: 0 auto;
+}
+.resalt-display {
+    background-color: var(--DarkBlue);
+    width: fit-content;
+    margin: 0 auto;
+    padding: .5rem 1.5rem;
+    border-radius: 20px;
+    color: var(--Orange);
+}
+.thank button {
+    letter-spacing: unset;
+    width: 100%;
+}
